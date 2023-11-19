@@ -1,0 +1,781 @@
+<!DOCTYPE HTML>
+<!-Recorrido virtual con imágenes 360°, realizado por el ingeniero Julián Esteban Londoño con el uso de la libreria Panellum, disponible en https://pannellum.org/->
+<html lang="es">
+<html>
+  <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour 360° Bodegas Fundaci&oacute;n Obeso Mej&iacute;a</title>
+    <link rel="stylesheet" href="pannellum/pannellum.css">
+	<link rel="stylesheet" href="estilos/styles.css">
+    <script type="text/javascript" src="pannellum/pannellum.js"></script></script>	
+<header id="site-head">
+  <div class="vertical animated bounceInDown">
+    <div id="site-head-content" class="inner">
+      <img src="https://fundacionobesomejia.org/wp-content/uploads/2022/11/cropped-cropped-Logo-FOM-null-horixon.png" width="196" height="76" alt="Fundación Obeso Mejia" id="logo" data-height-percentage="60"/></a>
+    </div>
+  </div>
+</header>
+ </head>
+  <body>
+    <div class="panorama-container">
+     <div class="panorama-title">BODEGA ADIELA DE LOMBANA 2. CARRERA 4 # 22 - 98 </div>
+      <div id="panorama1"></div>
+      <script>
+pannellum.viewer('panorama1', {   
+    "default": {
+        "firstScene": "Entrada",
+        "author": "Ing. Julian Londoño. Soluciones en Geomática.",
+        "sceneFadeDuration": 1000,
+		"autoLoad": true,
+		"compass": true,
+        // "hotSpotDebug": true,
+		"northOffset": 0
+    },
+    "scenes": {
+        "Entrada": {
+            "title": "Calle 22. Entrada bodega",
+            "hfov": 1000,
+            "pitch": 0,
+            "yaw": 180,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/GnludTU.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -5,
+                    "yaw": 175,
+                    "type": "scene",
+                    "text": "Pasillo oficina",
+                    "sceneId": "pasillo_1",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+			]
+        },
+		"pasillo_1": {
+            "title": "Pasillo oficina",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/F4bE3Hd.jpg",
+            "hotSpots": [				 
+				{
+                    "pitch": -6,
+                    "yaw": 162,
+                    "type": "scene",
+                    "text": "Continuacion del pasillo",
+                    "sceneId": "pasillo_2",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -1,
+                    "yaw": -7,
+                    "type": "scene",
+                    "text": "Entrada",
+                    "sceneId": "Entrada",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                }					
+            ]
+        },
+		"pasillo_2": {
+            "title": "Continuacion del pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/3mB8yCm.jpg",
+            "hotSpots": [
+				{
+                    "pitch": 1,
+                    "yaw": -16,
+                    "type": "scene",
+                    "text": "Pasillo",
+                    "sceneId": "pasillo_1",
+                    "targetYaw": -6,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -1,
+                    "yaw": 95,
+                    "type": "scene",
+                    "text": "Comedor",
+                    "sceneId": "comedor_1",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -0.48,
+                    "yaw": 309.8,
+                    "type": "scene",
+                    "text": "Escaleras",
+                    "sceneId": "abj_escal_of1",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                    "pitch": -1.98,
+                    "yaw": 181.64,
+                    "type": "scene",
+                    "text": "Continuacion del pasillo",
+                    "sceneId": "pasillo_3",
+                    "targetYaw": 269.19,
+                    "targetPitch": 0
+                },				
+            ]
+        },
+        "pasillo_3": {
+            "title": "Continuacion del pasillo",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/MhYG9lU.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 0.37,
+                    "yaw": 352.67,
+                    "type": "scene",
+                    "text": "Volver en el pasillo",
+                    "sceneId": "pasillo_2",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },		
+            ]
+        },
+		"comedor_1": {
+            "title": "Comedor",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/mFobofF.jpg",
+            "hotSpots": [
+				{
+                    "pitch": 2,
+                    "yaw": 22,
+                    "type": "scene",
+                    "text": "Volver al pasillo",
+                    "sceneId": "pasillo_2",
+                    "targetYaw": -90,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -3,
+                    "yaw": 176,
+                    "type": "scene",
+                    "text": "Continuacion comedor",
+                    "sceneId": "comedor_2",
+                    "targetYaw": 152,
+                    "targetPitch": 0
+                }					
+            ]
+        },
+        "comedor_2": {
+            "title": "Comedor",
+            "hfov": 1000,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/XEe5J75.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 1.7,
+                    "yaw": -14.2,
+                    "type": "scene",
+                    "text": "Entrada comedor",
+                    "sceneId": "comedor_1",
+                    "targetYaw": 0,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": 1.55,
+                    "yaw": -4.11,
+                    "type": "scene",
+                    "text": "Volver al pasillo",
+                    "sceneId": "pasillo_2",
+                    "targetYaw": -90,
+                    "targetPitch": 0
+                },
+				{
+                    "pitch": -1.05,
+                    "yaw": 93.5,
+                    "type": "scene",
+                    "text": "Cocina",
+                    "sceneId": "cocina",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                },
+                {
+                        "pitch": -4.65,
+                        "yaw": 184.78,
+                        "type": "scene",
+                        "text": "Entrar a la oficina",
+                        "sceneId": "oficina_1",
+                        "targetYaw": 180,
+                        "targetPitch": 0
+                    }
+            ],
+        },
+        "cocina": {
+                "title": "Cocina",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/G86ZHkj.jpg",
+                "hotSpots": [
+                	{
+                        "pitch": 0.9,
+                        "yaw": 6.8,
+                        "type": "scene",
+                        "text": "Volver al Comedor",
+                        "sceneId": "comedor_2",
+                        "targetYaw": 270,
+                        "targetPitch": 0
+                    }	,
+				{
+                    "pitch": -1.8,
+                    "yaw": 170,
+                    "type": "scene",
+                    "text": "Almacen",
+                    "sceneId": "almacen_1",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                }				
+                ]
+            },
+        "almacen_1": {
+                "title": "Almacen",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/EylPaN3.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": 1.51,
+                        "yaw": 1.15,
+                        "type": "scene",
+                        "text": "Regresar a la Cocina",
+                        "sceneId": "cocina",
+                        "targetYaw": 0,
+                        "targetPitch": 0
+                    },
+				{
+                    "pitch": 0.098,
+                    "yaw": 98.11,
+                    "type": "scene",
+                    "text": "Continuacion Almacen",
+                    "sceneId": "almacen_2",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                }				
+                ]
+            },
+        "almacen_2": {
+                "title": "Continuacion del almacen",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/XmSFUwe.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": 2.27,
+                        "yaw": 6.33,
+                        "type": "scene",
+                        "text": "Regresar en el Almacen",
+                        "sceneId": "almacen_1",
+                        "targetYaw": -90,
+                        "targetPitch": 0
+                    },
+				{
+                    "pitch": -1.13,
+                    "yaw": -174.6,
+                    "type": "scene",
+                    "text": "Continuacion Almacen",
+                    "sceneId": "almacen_3",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                }				
+                ]
+            },
+        "almacen_3": {
+                "title": "Continuacion del almacen",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/IP6bNmb.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": 2.27,
+                        "yaw": 2.87,
+                        "type": "scene",
+                        "text": "Regresar en el Almacen",
+                        "sceneId": "almacen_2",
+                        "targetYaw": 0,
+                        "targetPitch": 0
+                    },
+				{
+                    "pitch": -1.13,
+                    "yaw": 182.6,
+                    "type": "scene",
+                    "text": "Continuacion Almacen",
+                    "sceneId": "almacen_4",
+                    "targetYaw": -9.8,
+                    "targetPitch": 5.6
+                }				
+                ]
+            },
+        "almacen_4": {
+                "title": "Continuacion del almacen",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/bUIVUDX.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -2.93,
+                        "yaw": 187.7,
+                        "type": "scene",
+                        "text": "Regresar en el Almacen",
+                        "sceneId": "almacen_3",
+                        "targetYaw": 0,
+                        "targetPitch": 0
+                    },
+                    {
+                        "pitch": 1.07,
+                        "yaw": -96,
+                        "type": "scene",
+                        "text": "Continuacion del Almacen",
+                        "sceneId": "almacen_5",
+                        "targetYaw": -167,
+                        "targetPitch": 3
+                    },				
+                ]
+            },
+        "almacen_5": {
+                "title": "Continuacion del almacen",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/cuNDb0G.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": 2.6,
+                        "yaw": 28,
+                        "type": "scene",
+                        "text": "Regresar en el Almacen",
+                        "sceneId": "almacen_4",
+                        "targetYaw": 0,
+                        "targetPitch": 0
+                    },
+                    {
+                        "pitch": 3,
+                        "yaw": -83.5,
+                        "type": "scene",
+                        "text": "Continuacion del Almacen",
+                        "sceneId": "almacen_6",
+                        "targetYaw": 180,
+                        "targetPitch": 0
+                    },			
+                ]
+            },
+        "almacen_6": {
+                "title": "Continuacion del almacen",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/YxVq44N.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": 3.43,
+                        "yaw": 358.68,
+                        "type": "scene",
+                        "text": "Regresar en el Almacen",
+                        "sceneId": "almacen_5",
+                        "targetYaw": 100,
+                        "targetPitch": 0
+                    },
+                    {
+                        "pitch": 2.65,
+                        "yaw": 182.77,
+                        "type": "scene",
+                        "text": "Continuacion del Almacen",
+                        "sceneId": "almacen_7",
+                        "targetYaw": 0,
+                        "targetPitch": 0
+                    },			
+                ]
+            },
+        "almacen_7": {
+                "title": "Continuacion del almacen",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/FfEmkDp.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": 2.6,
+                        "yaw": -5.4,
+                        "type": "scene",
+                        "text": "Regresar en el Almacen",
+                        "sceneId": "almacen_6",
+                        "targetYaw": 0,
+                        "targetPitch": 0
+                    },		
+                ]
+            },
+        "oficina_1": {
+                "title": "Oficina",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/JrzonrH.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": 13.8,
+                        "yaw": 111.3,
+                        "type": "scene",
+                        "text": "Subir escaleras",
+                        "sceneId": "oficina_2",
+                        "targetYaw": 180,
+                        "targetPitch": 0
+                    },
+                    {
+                        "pitch": -1.63,
+                        "yaw": 14.19,
+                        "type": "scene",
+                        "text": "Volver al comedor",
+                        "sceneId": "comedor_2",
+                        "targetYaw": 0,
+                        "targetPitch": 0
+                    }		
+                ]
+            },
+        "oficina_2": {
+                "title": "Oficina",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/FQ9L16j.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -34.8,
+                        "yaw": 1.13,
+                        "type": "scene",
+                        "text": "Bajar escaleras",
+                        "sceneId": "oficina_1",
+                        "targetYaw": -90,
+                        "targetPitch": 0
+                    },
+                    {
+                        "pitch": -0.38,
+                        "yaw": 98.8,
+                        "type": "scene",
+                        "text": "Entrar",
+                        "sceneId": "oficina_3",
+                        "targetYaw": 180,
+                        "targetPitch": 0
+                    },
+                    			
+                ]
+            },
+        "oficina_3": {
+                "title": "Oficina",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/BRe6U1l.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -1.15,
+                        "yaw": 89.79,
+                        "type": "scene",
+                        "text": "Pasillo oficina",
+                        "sceneId": "oficina_4",
+                        "targetYaw": 180,
+                        "targetPitch": 0
+                    },
+                    {
+                        "pitch": 1.59,
+                        "yaw": -178.5,
+                        "type": "scene",
+                        "text": "Pasillo oficina",
+                        "sceneId": "oficina_5",
+                        "targetYaw": 180,
+                        "targetPitch": 0
+                    },
+                    {
+                        "pitch": 1.10,
+                        "yaw": 5.67,
+                        "type": "scene",
+                        "text": "Escaleras",
+                        "sceneId": "oficina_2",
+                        "targetYaw": 270,
+                        "targetPitch": 0
+                    }				
+                ]
+            },
+        "oficina_4": {
+                "title": "Oficina",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/pH9rlqN.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -3.8,
+                        "yaw": -2.05,
+                        "type": "scene",
+                        "text": "Pasillo oficina",
+                        "sceneId": "oficina_3",
+                        "targetYaw": 0,
+                        "targetPitch": 0
+                    },		
+                ]
+            },
+        "oficina_5": {
+                "title": "Oficina",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/BR7Opzd.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -2.77,
+                        "yaw": 2.87,
+                        "type": "scene",
+                        "text": "Volver en el Pasillo",
+                        "sceneId": "oficina_3",
+                        "targetYaw": 0,
+                        "targetPitch": 0
+                    },
+                    {
+                        "pitch": 1.46,
+                        "yaw": -176.5,
+                        "type": "scene",
+                        "text": "Pasillo oficina",
+                        "sceneId": "oficina_6",
+                        "targetYaw": 180,
+                        "targetPitch": 0
+                    },		
+                ]
+            },
+        "oficina_6": {
+                "title": "Oficina",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/AI2LIMF.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -1.15,
+                        "yaw": 89.79,
+                        "type": "scene",
+                        "text": "Pasillo oficina",
+                        "sceneId": "oficina_7",
+                        "targetYaw": 180,
+                        "targetPitch": 0
+                    },
+                    {
+                        "pitch": -0.33,
+                        "yaw": -24.77,
+                        "type": "scene",
+                        "text": "Volver en el Pasillo",
+                        "sceneId": "oficina_5",
+                        "targetYaw": 0,
+                        "targetPitch": 0
+                    },
+                    {
+                        "pitch": 0.84,
+                        "yaw": 213.31,
+                        "type": "scene",
+                        "text": "Entrar",
+                        "sceneId": "arr_escal_of1",
+                        "targetYaw": 94,
+                        "targetPitch": 0
+                    },		
+                ]
+            },
+        "oficina_7": {
+                "title": "Oficina",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/rgIafcA.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": 3.49,
+                        "yaw": -0.25,
+                        "type": "scene",
+                        "text": "Volver en el pasillo",
+                        "sceneId": "oficina_6",
+                        "targetYaw": 276,
+                        "targetPitch": 0
+                    },
+                ]
+            },
+        "abj_escal_of1": {
+                "title": "Oficina",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/Ha4zNtC.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -1,
+                        "yaw": 280,
+                        "type": "scene",
+                        "text": "Pasillo oficina",
+                        "sceneId": "pasillo_2",
+                        "targetYaw": 95,
+                        "targetPitch": 0
+                    },
+                    {
+                        "pitch": 24.52,
+                        "yaw": 176.69,
+                        "type": "scene",
+                        "text": "Subir escaleras",
+                        "sceneId": "arr_escal_of1",
+                        "targetYaw": 180,
+                        "targetPitch": 0
+                    },	
+                ]
+            },
+        "arr_escal_of1": {
+                "title": "Oficina",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/dWbkE2n.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -1.75,
+                        "yaw": 94.57,
+                        "type": "scene",
+                        "text": "Pasillo oficina",
+                        "sceneId": "sp_pasillo_1",
+                        "targetYaw": 180,
+                        "targetPitch": 0
+                    },
+                    {
+                        "pitch": -28.81,
+                        "yaw": 1.54,
+                        "type": "scene",
+                        "text": "Bajar escaleras",
+                        "sceneId": "abj_escal_of1",
+                        "targetYaw": 0,
+                        "targetPitch": 0
+                    },
+                    {
+                        "pitch": 0.66,
+                        "yaw": 272.08,
+                        "type": "scene",
+                        "text": "Entrar",
+                        "sceneId": "oficina_6",
+                        "targetYaw": 0,
+                        "targetPitch": 0
+                    },	
+                ]
+            },
+        "sp_pasillo_1": {
+                "title": "Oficina",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/ZtsHEll.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": 1.35,
+                        "yaw": 359,
+                        "type": "scene",
+                        "text": "Escaleras",
+                        "sceneId": "arr_escal_of1",
+                        "targetYaw": 272,
+                        "targetPitch": 0
+                    },
+                    {
+                    "pitch": -2.17,
+                    "yaw": 183,
+                    "type": "scene",
+                    "text": "Escaleras",
+                    "sceneId": "sp_pasillo_2",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                    },
+                    {
+                    "pitch": 0.08,
+                    "yaw": 90.95,
+                    "type": "scene",
+                    "text": "Continuar en el pasillo",
+                    "sceneId": "sp_pasillo_4",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                    },	
+                ]
+            },
+        "sp_pasillo_2": {
+                "title": "Oficina",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/Xs7U0Xh.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": 0.29,
+                        "yaw": 355.35,
+                        "type": "scene",
+                        "text": "Volver en el pasillo",
+                        "sceneId": "sp_pasillo_1",
+                        "targetYaw": 0,
+                        "targetPitch": 0
+                    },
+                    {
+                    "pitch": -3.14,
+                    "yaw": 176.43,
+                    "type": "scene",
+                    "text": "Continuar en el pasillo",
+                    "sceneId": "sp_pasillo_3",
+                    "targetYaw": 180,
+                    "targetPitch": 0
+                }		
+                ]
+            },
+        "sp_pasillo_3": {
+                "title": "Oficina",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/Vvc0Fse.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": 1.14,
+                        "yaw": 8.64,
+                        "type": "scene",
+                        "text": "Volver en el pasillo",
+                        "sceneId": "sp_pasillo_2",
+                        "targetYaw": 0,
+                        "targetPitch": 0
+                    },		
+                ]
+            },
+        "sp_pasillo_4": {
+                "title": "Oficina",
+                "hfov": 1000,
+                "yaw": 0,
+                "type": "equirectangular",
+                "panorama": "https://i.imgur.com/O0jPUx6.jpg",
+                "hotSpots": [
+                    {
+                        "pitch": -0.855,
+                        "yaw": 0,
+                        "type": "scene",
+                        "text": "Volver en el Pasillo",
+                        "sceneId": "sp_pasillo_1",
+                        "targetYaw": -90,
+                        "targetPitch": 0
+                    },		
+                ]
+            },
+        }
+});
+      </script>
+    </div>
+  </body>
+</html>
