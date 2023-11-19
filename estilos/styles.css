@@ -1,0 +1,92 @@
+/* Estilos generales */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #152931;
+  color: #FFFFFF;
+}
+logo_container{
+background-color: #B2B2B2;
+}
+.menu-icon{
+background-color: #B2B2B2;
+}
+.panorama-container {
+        width: 800px;
+        height: 600px;
+        margin: 0 auto;
+}
+.panorama-title {
+        font-family: Arial, sans-serif;
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+        margin-bottom: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+a {
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilos de la barra de navegación */
+
+nav {
+  background-color: #444;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos del encabezado */
+
+/*header {
+  background-color: #B2B2B2;
+  margin: 0 auto;
+  padding:
+}*/
+#site-head{
+background-color: #B2B2B2;
+}
+.menu-icon{
+background-color: #B2B2B2;
+}
+.vertical{
+background-color: #DDDDDD;
+/* en la caja padre se usa display flex, align-items center y justify content center para centrar el div hijo */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#site-head-content{
+background-color: #ddd;
+text-align: center; /* centrar el texto de la caja, si son elementos pues se usa lo mismo que la caja padre, display flex etc... */
+}
+#site-head-content img{
+width: 100px;
+}
